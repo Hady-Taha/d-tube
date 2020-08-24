@@ -1,0 +1,29 @@
+/***********Start Home Page***************/
+.form-add{
+	margin: 24% auto;
+}
+
+.form-control{
+	border-radius: 47px;
+    background: #ddd;
+}
+.btns{
+	position: relative;
+	left: 80px;
+}
+/***********End Home page***************/
+
+
+
+/***********Start Details Page***************/
+.form-add2{
+	margin: 10% auto;
+}
+
+
+
+img{
+	width: 500px;
+	height: 300px;
+}
+/***********End Details Page***************/

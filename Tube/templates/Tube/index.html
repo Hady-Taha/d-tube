@@ -1,0 +1,44 @@
+{% load static %}
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>{{title}}</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="{% static 'Tube/css/all.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Tube/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Tube/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Tube/css/main.css' %}">
+</head>
+<body>
+	
+	
+	<div class="container d-flex justify-content-center form-add">
+		<form  method="POST">
+		  {% csrf_token %}
+		  <div class="form-group">
+		  	<img src="{% static 'Tube/image/icon.svg' %}" class="img-fluid icon " alt="logo">
+		    {{form|crispy }}
+			<!--<input type="url" class="form-control" placeholder="Youtube Link......" name="url" >-->
+		    <button type="submit" class="btn btns btn-info  mt-3" download>download</button>
+		  </div>
+	    </form>
+    </div>
+
+
+<footer class="text-center">
+
+	<small>developed by <a href="https://twitter.com/HadyTaha77" target="_blank">Hady taha</a> 	&copy;
+	</small>
+
+</footer>
+ 	
+	 
+	<script type="text/javascript" src="{% static 'Tube/js/fontawesome.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'Tube/js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'Tube/js/popper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'Tube/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'Tube/js/main.js' %}"></script>
+</body>
+</html>
